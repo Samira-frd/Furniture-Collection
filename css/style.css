@@ -1,0 +1,568 @@
+@import 'reset.css';
+/*@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.woff2') format('woff2'), 
+    url('../fonts/Yekan.woff') format('woff'), 
+    url('../fonts/Yekan.ttf') format('ttf'), 
+    url('../fonts/Yekan.eot') format('eot'),
+}*/
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.woff2') format('woff2'),
+        url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.eot') format('eot'),
+        url('../fonts/Yekan.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    font-family: 'Yekan';
+    direction: rtl;
+}
+
+.container-main{
+    width: 1400px;
+    margin: auto;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;  
+    padding: 0 15px;
+    margin: 0;  
+    
+}
+
+/*Hamburger icon*/
+.hamburger-icon{
+    width: 20%;
+    display: none;
+}
+
+.hamburger-icon img{
+    width: 50px;
+}
+
+#responsive-nav{
+    display: none;
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+    height: 70px;
+    display: flex;    
+}
+
+header .navbar{
+    margin-right: 40px;
+    margin-top: 20px;
+    display: flex;
+}
+
+header nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;    
+   margin: 0;
+    
+}
+
+
+header nav .navbar-right{
+    display: flex;
+}
+
+header nav .navbar-right ul{
+    display: flex;
+}
+
+header nav .navbar-right ul li{
+    margin: 0 10px;
+    
+}
+
+header nav .navbar-right ul li a{
+    text-decoration: none;
+    color: #696868;
+    font-size: 20px;
+}
+
+
+header nav .navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+header nav .navbar-left ul{
+    display: flex;
+    margin-left: 50px;
+}
+
+header nav .navbar-left ul li{
+    margin: 0 10px;     
+}
+
+header nav .navbar-left ul li a{
+    font-size: 20px;
+    color: #1b1a1a;  
+}
+
+header nav .navbar-left img{
+    width: 80px;
+}
+
+
+
+
+header #slide {
+    background-image: url('../images/slide.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+header #slide .slider{
+    width: 100%;
+    height: 900px;
+    position: relative; 
+   
+}
+
+header #slide .slider span{
+    position: absolute;
+    left: 38%;
+    top: 36%;
+    font-size: 140px;
+    font-weight: bold;
+    color: rgb(224, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #slide .slider .slid-description{
+    position: absolute;
+    left: 0%;
+    top: 40%;
+}
+header #slide .slider .slid-description h1{
+    font-size: 180px;
+    margin-right: 50px;
+    line-height: 1.5;
+    color: rgb(107, 107, 110);
+}
+
+header #slide .slider .slid-description h2{
+    font-size: 70px;
+    color: rgb(8, 6, 6);
+}
+
+/*hanging lamp*/
+
+#hanging-lamp{
+    width: 100%;
+    background-color: #c56211;
+    position: relative;
+    display: flex;
+    left: 15px;
+}
+
+#hanging-lamp .test{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 90%;
+    background-color: white;
+}
+
+#hanging-lamp .hanging-lamp{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#hanging-lamp .hanging-lamp .hanging-right{
+    display: flex;
+    background-color: white;
+    width: 67.5%;
+    
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .description-right{
+    position: relative;
+    margin-right: 15px;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .description-right h1{
+    font-size: 40px;
+    margin-top: 50px;
+    color: #53341b;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .description-right p{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px; 
+    line-height: 30px;   
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .description-right a{
+    text-decoration: none;
+    background-color: #ce230d;
+    padding: 10px 15px;
+    color: white;
+    position: absolute;
+    left: 20px;
+}
+
+
+#hanging-lamp .hanging-lamp .hanging-right .img-right img{
+    width: 500px;
+    height: 300px;
+}
+
+
+#hanging-lamp .hanging-lamp .hanging-left{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 35%;
+    text-align: center;
+    
+}
+
+#hanging-lamp .hanging-lamp .hanging-left .description-left{
+    width: 100%;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left h2{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+
+
+
+/*hanging lamp part 2*/
+
+#hanging-lamp-two{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+
+}
+
+/*#hanging-lamp-two .text-two{
+    
+    background-image: url('../images/hang.jpg');
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 35.3%;
+}*/
+
+
+#hanging-lamp-two .hanging-lamp-two{
+    display: flex;
+}
+
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-right{
+    width: 65%;
+    height: 600px;
+    background-image: url(../images/hang.jpg); 
+    background-size: cover;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 35.3%; 
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left{
+    width: 35%;
+    height: 600px;    
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left ul li{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left ul li img{
+    width: 200px;
+    height: 230px;
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left ul li h4{
+    margin-top: 25px;
+}
+
+#hanging-lamp-two .hanging-lamp-two .hang-two-left ul li h5{
+    margin-top: 10px;
+
+}
+
+/* sofa */
+
+
+#sofa .sofa-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 98.5%;
+    background-color: white;
+}
+
+#sofa .sofa{
+    display: flex;
+    justify-content: space-between;
+    background-color: #294152;
+    position: relative;
+    display: flex;
+}
+
+
+#sofa .sofa .sofa-left{
+    display: flex;
+    background-color: white;
+    width: 65%;
+    justify-content: space-between;
+}
+#sofa .sofa .sofa-left .description-right{
+    position: relative;
+    padding: 20px 40px;
+}
+#sofa .sofa .sofa-left .description-right h1{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #294152;
+
+}
+#sofa.sofa .sofa-left .description-right p{
+    font-size: 20px;
+    line-height: 30px; 
+}
+#sofa .sofa .sofa-left .description-right a{
+    text-decoration: none;
+    background-color: #264aec;
+    padding: 10px 15px;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+
+#sofa .sofa .sofa-left .img-right img{
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+}
+#sofa .sofa .sofa-right{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+}
+#sofa .sofa .sofa-right .desctiption-left{
+    width: 100%;
+}
+#sofa .sofa .sofa-right h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#sofa .sofa .sofa-right h2{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+
+/*Furniture in part 4*/
+
+
+#furniture-p4{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+
+}
+
+/*#hanging-lamp-two .hanging-lamp-two .hang-two-right{
+    width: 65%;
+    height: 600px;
+    background-image: url(../images/hang.jpg); 
+    background-size: cover;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 35.3%; 
+}*/
+
+#furniture-p4 .container .text-two{
+    
+    background-image: url('../images/5.jpg');
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 36.1%;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+}
+
+#furniture-p4 .furniture-p4{
+    display: flex;
+    
+}
+
+
+#furniture-p4 .furniture-p4 .furn-right{
+    width: 65%;
+    height: 700px;
+    
+}
+
+#furniture-p4 .container .furniture-p4 .furn-left{
+    width: 36.3%;
+    height: 700px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    
+}
+
+#furniture-p4 .furniture-p4 .furn-left ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#furniture-p4 .furniture-p4 .furn-left ul li{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#furniture-p4 .furniture-p4 .furn-left ul li img{
+    width: 200px;
+    height: 220px;
+    margin-top: 40px;
+}
+
+#furniture-p4 .furniture-p4 .furn-left ul li h4{
+    margin-top: 25px;
+}
+
+#furniture-p4 .furniture-p4 .furn-left ul li h5{
+    margin-top: 10px;
+
+}
+
+
+/*counters*/
+#main-counters{
+      
+    background-color: #bfc7cf;
+    padding: 120px 0;
+    margin: 0 15px;
+}
+
+#main-counters .counters{
+    width: 100%;
+    display: flex;
+    
+}
+
+#main-counters .counters .counter-items{
+    width: 25%;
+    text-align: center;    
+}
+
+#main-counters .counters .counter-items svg{
+    font-size: 40px;
+}
+
+#main-counters .counters .counter-items .counter{
+    margin: 50px 0;
+    font-size: 25px;
+}
+
+#main-counters .counters .counter-items h5{
+    font-size: 20px;
+}
+
+
+#footer{
+    height: 300px;
+    background-color: rgb(57, 66, 75);
+    margin: 0 15px;
+}
+
+#footer .footer{
+    display: flex;   
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .container .footer .footer-top{
+    color: white;
+    text-align: center;
+
+}
+
+#footer .container .footer .footer-top h2{
+    margin-top: 50px;   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+#footer .container .footer .footer-top svg{
+    margin: 25px 25px;
+    font-size: 20px;
+}
+
+
+#footer .container .footer .footer-bottom h3{
+    width: 400px;
+    color: white;
+    font-size: 15px;
+    margin: 30px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
